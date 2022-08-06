@@ -1,14 +1,14 @@
-### Learn TypeScript学习
+# Learn TypeScript学习
 
 TypeScript是直接编译为JavaScript
 
-#### TS的编译过程：
+## TS的编译过程：
 
 1、TypeScript源码 -> TypeScript AST<br><br>
 2、类型检查器检查AST<br><br>
 3、TypeScript AST -> JavaScript源码
 
-#### 类型系统
+## 类型
 
 any: 尽量不要使用，vscode只会提示但不会报错
 unknown: 在你实在不知道类型的时候，可以使用unknown typescript会做自动推导
@@ -31,5 +31,20 @@ symbol: 符号，比较新的语言特性，es2015才出来 具体应用场景�
         type Cat = {name: string, purrs: boolean}
         type Dog = {name: string, barks: boolean, wags: boolean}
     ```
+
+## 数组
+
+一般情况下typescript里面的数组是同质的，也就是同一种类型，如果不是同一种类型typescript会报错
+
+元组是数组的子类型
+
+## null, undefined, void, never
+null - 缺少值
+undefined - 尚未赋值的变量
+void - 没有return的函数
+never - 永不返回的函数
+
+## 枚举
+
 
 

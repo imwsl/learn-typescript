@@ -13,4 +13,4 @@ let dog : Dog = {
 }
 
 console.log(dog.name)
-console.log(dog.age)
+console.log(dog.age) 
